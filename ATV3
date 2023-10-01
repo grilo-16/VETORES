@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int tamanho = 10;
+    double vetorOriginal[tamanho];
+    double vetorQuadrados[tamanho];
+
+    // Ler os números reais e armazená-los no vetorOriginal
+    printf("Digite 10 números reais:\n");
+
+    for (int i = 0; i < tamanho; i++) {
+        printf("Número %d: ", i + 1);
+        scanf("%lf", &vetorOriginal[i]);
+    }
+
+    // Calcular os quadrados e armazená-los no vetorQuadrados
+    for (int i = 0; i < tamanho; i++) {
+        vetorQuadrados[i] = pow(vetorOriginal[i], 2);
+    }
+
+    // Imprimir os conjuntos
+    printf("Conjunto Original:\n");
+    for (int i = 0; i < tamanho; i++) {
+        printf("%.2lf ", vetorOriginal[i]);
+    }
+
+    printf("\nConjunto dos Quadrados:\n");
+    for (int i = 0; i < tamanho; i++) {
+        printf("%.2lf ", vetorQuadrados[i]);
+    }
+
+    printf("\n");
+
+    return 0;
+}

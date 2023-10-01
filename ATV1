@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int A[6] = {1, 0, 5, -2, -5, 7};
+
+    // Calcula a soma dos valores nas posições 0, 1 e 5 do vetor A
+    int soma = A[0] + A[1] + A[5];
+
+    // Armazena o valor 100 na posição 4 do vetor A
+    A[4] = 100;
+
+    // Imprime a soma calculada
+    printf("Soma dos valores nas posições 0, 1 e 5: %d\n", soma);
+
+    // Imprime cada valor do vetor A, um em cada linha
+    for (int i = 0; i < 6; i++) {
+        printf("A[%d] = %d\n", i, A[i]);
+    }
+
+    return 0;
+}
